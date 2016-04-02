@@ -1,0 +1,37 @@
+<div style="margin-top: 15%; background-color: transparent;" class="row">
+
+    <h1>LIST OF RESERVATIONS</h1>
+
+    <div style="height: 400px; overflow: scroll;">
+        <uib-accordion>
+            <uib-accordion-group heading="Reservations" >
+                <table class="table">
+                    <thead>
+                    <th>Reservation id</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Number of seats</th>
+                    <th>Additional passengers</th>
+                    </thead>
+                    <tbody style="color: black !important;">
+                        <tr ng-repeat="res in allReservations">
+                            <td style="text-align: left;">{{res.reservationID}}</td>
+                            <td style="text-align: left;">{{res.origin}}</td>
+                            <td style="text-align: left;">{{res.destination}}</td>
+                            <td style="text-align: left;">{{res.numberOfSeats}}</td>
+                            <td style="text-align: left;">
+                                <ul ng-repeat="pass in res.Passengers" style='list-style-type: none;'>
+                                    <li>{{pass.lastName}}, {{pass.firstName}}</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </uib-accordion-group>
+
+        </uib-accordion>
+    </div>
+    <h3><a href="#/view1">Go to searchpage</a></h3>
+    <h3 style="color: black;" ng-click="logout()">Logout</h3>
+
+</div>

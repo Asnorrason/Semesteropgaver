@@ -1,0 +1,28 @@
+.unstyled::-webkit-inner-spin-button
+{
+    display: none;
+    -webkit-appearance: none;
+}
+
+md-content
+{
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    border-radius: 60px;
+    margin: 5px;
+    border: none;
+    /* padding-left: 10px; */
+    color: #333333;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+md-datepicker.md-default-theme, md-datepicker {
+    background: transparent;
+}
+
+.md-default-theme .md-datepicker-input, .md-datepicker-input {
+    color: rgba(0,0,0,0.87);
+    background: transparent!important;
+}

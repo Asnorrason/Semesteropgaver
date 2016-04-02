@@ -1,0 +1,45 @@
+<!--CAROUSEL-->
+        <div class="carousel slide" id="myCarousel">
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+                <div class="item">
+                    <!-- Set the first background image using inline CSS below. -->
+                    <div style="background-image:url('img/Berlin.jpg');" class="fill"></div>
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Set the second background image using inline CSS below. -->
+                    <div style="background-image:url('img/Paris.jpg');" class="fill"></div>
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="item active">
+                    <!-- Set the third background image using inline CSS below. -->
+                    <div style="background-image:url('img/Rome.jpg');" class="fill"></div>
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<div class="container">
+    <div class="searchTableFromTo">
+        <search-function-from-to-module></search-function-from-to-module>
+    </div>
+
+    <div class="resultList text-center" hidden>
+        <h2>Results</h2>
+        <table class="table" style="width: 100%;">
+            <tr ng-repeat="trip in ctrl.trips">
+                <td>{{trip.origin}}</td>
+                <td>{{trip.destination}}</td>
+                <td>{{trip.totalPrice}}</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
